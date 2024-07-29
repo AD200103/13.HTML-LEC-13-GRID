@@ -1,0 +1,190 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.pagewrap {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(92, 20, 92);
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: grid;
+  grid-template-columns: 80%;
+  grid-template-rows: 100%;
+  justify-content: center;
+  align-content: center;
+}
+main {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-gap: 2% 2%;
+  background-color: rgb(115, 25, 115);
+  grid-template-columns: repeat(5, 13%);
+  grid-template-rows: repeat(4, 22.5%);
+  justify-self: center;
+  align-self: center;
+  justify-content: center;
+  align-content: center;
+}
+main > div {
+  background-color: white;
+}
+main .first > div {
+  border: 1px solid rgb(77, 1, 77);
+}
+main .second > div {
+  border: 1px solid rgb(77, 1, 77);
+}
+main .third > div {
+  border: 1px solid rgb(77, 1, 77);
+}
+main .fourth > div {
+  border: 1px solid rgb(77, 1, 77);
+}
+main .fifth > div {
+  border: 1px solid rgb(77, 1, 77);
+}
+main .six > div {
+  border: 1px solid rgb(77, 1, 77);
+}
+main .seven > div {
+  border: 1px solid rgb(77, 1, 77);
+}
+main .Ten > div {
+  border: 1px solid rgb(77, 1, 77);
+}
+main .fifteen > div {
+  border: 1px solid rgb(77, 1, 77);
+}
+
+main .first,
+.second,
+.third {
+  display: grid;
+  grid-gap: 0px 0px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  border: 1px solid rgb(77, 1, 77);
+}
+main .fourth,
+.fifth {
+  display: grid;
+  grid-gap: 0px 0px;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  border: 1px solid rgb(77, 1, 77);
+}
+main .fifth,
+.six,
+.seven,
+.Ten,
+.fifteen {
+  display: grid;
+  grid-gap: 0px 0px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  border: 1px solid rgb(77, 1, 77);
+}
+main .six {
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+main .seven {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+main .fifteen {
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+main .first .secondT,
+.thirdT,
+.sixthT {
+  grid-column: span 2;
+}
+.second .secondTT,
+.fourthTT,
+.fifthTT {
+  grid-row: span 2;
+}
+.third .firstTT {
+  grid-row: span 2;
+  grid-column: span 2;
+}
+.fourth .first4,
+.third4,
+.nineth4,
+.eleven4 {
+  grid-column: span 3;
+}
+.fourth .fourth4,
+.sixth4,
+.seventh4,
+.eight4 {
+  grid-column: span 2;
+}
+.fourth .fifth4 {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+.fifth .first5,
+.third5,
+.sixth5,
+.ten5 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.fifth .second5,
+.nineth5 {
+  grid-column: span 4;
+  grid-row: span 2;
+}
+.six .first6 {
+  grid-column: span 6;
+  grid-row: span 2;
+}
+.six .fourth6,
+.fifth6 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.six .sixth6 {
+  grid-column: span 2;
+}
+.seven .first7,
+.fifth7 {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+.Ten .first10,
+.seventh10,
+.nineth10 {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+.Ten .third10,
+.fifth10,
+.eleven10 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.fifteen .first15,
+.second15,
+.third15,
+.eight15,
+.nineth15,
+.ten15 {
+  grid-column: span 4;
+}
+.fifteen .fourth15,
+.fifth15,
+.sixth15,
+.seventh15,
+.eleven15,
+.twelve15,
+.thirteen15,
+.fourteen15 {
+  grid-column: span 3;
+}
