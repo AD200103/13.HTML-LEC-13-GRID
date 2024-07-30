@@ -52,7 +52,25 @@ main .six > div {
 main .seven > div {
   border: 1px solid rgb(77, 1, 77);
 }
+main .eight > div {
+  border: 1px solid rgb(77, 1, 77);
+}
+main .nine > div {
+  border: 1px solid rgb(77, 1, 77);
+}
 main .Ten > div {
+  border: 1px solid rgb(77, 1, 77);
+}
+main .eleven > div {
+  border: 1px solid rgb(77, 1, 77);
+}
+main .twelve > div {
+  border: 1px solid rgb(77, 1, 77);
+}
+main .thirteen > div {
+  border: 1px solid rgb(77, 1, 77);
+}
+main .fourteen > div {
   border: 1px solid rgb(77, 1, 77);
 }
 main .fifteen > div {
@@ -68,8 +86,14 @@ main .first,
   grid-template-rows: repeat(3, 1fr);
   border: 1px solid rgb(77, 1, 77);
 }
-main .fourth,
-.fifth {
+main .fourth {
+  display: grid;
+  grid-gap: 0px 0px;
+  grid-template-columns: repeat(15, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  border: 1px solid rgb(77, 1, 77);
+}
+main .fifth {
   display: grid;
   grid-gap: 0px 0px;
   grid-template-columns: repeat(7, 1fr);
@@ -79,7 +103,13 @@ main .fourth,
 main .fifth,
 .six,
 .seven,
+.eight,
+.nine,
 .Ten,
+.eleven,
+.twelve,
+.thirteen,
+.fourteen,
 .fifteen {
   display: grid;
   grid-gap: 0px 0px;
@@ -91,9 +121,34 @@ main .six {
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(4, 1fr);
 }
+
 main .seven {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
+}
+main .eight {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+main .nine {
+  grid-template-columns: repeat(13, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+main .eleven {
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+main .twelve {
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+}
+main .thirteen {
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+main .fourteen {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
 }
 main .fifteen {
   grid-template-columns: repeat(12, 1fr);
@@ -117,16 +172,20 @@ main .first .secondT,
 .third4,
 .nineth4,
 .eleven4 {
+  grid-column: span 6;
+}
+.fourth .second4,
+.ten4 {
   grid-column: span 3;
 }
 .fourth .fourth4,
 .sixth4,
 .seventh4,
 .eight4 {
-  grid-column: span 2;
+  grid-column: span 4;
 }
 .fourth .fifth4 {
-  grid-column: span 3;
+  grid-column: span 7;
   grid-row: span 2;
 }
 .fifth .first5,
@@ -158,6 +217,41 @@ main .first .secondT,
   grid-column: span 3;
   grid-row: span 2;
 }
+.eight .first8 {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+.eight .third8 {
+  grid-row: span 2;
+}
+.nine .first9 {
+  grid-column: span 4;
+  grid-row: span 3;
+}
+.nine .second9,
+.third9,
+.fourth9,
+.ten9,
+.eleven9 {
+  grid-column: span 3;
+}
+.nine .fifth9 {
+  grid-column: span 9;
+  grid-row: span 3;
+}
+.nine .sixth9,
+.seventh9 {
+  grid-column: span 2;
+}
+.nine .eight9 {
+  grid-column: span 4;
+  grid-row: span 2;
+}
+.nine .nineth9 {
+  grid-column: span 6;
+  grid-row: span 2;
+}
+
 .Ten .first10,
 .seventh10,
 .nineth10 {
@@ -169,6 +263,24 @@ main .first .secondT,
 .eleven10 {
   grid-column: span 2;
   grid-row: span 2;
+}
+.eleven .first11 {
+  grid-column: span 5;
+  grid-row: span 4;
+}
+.fourteen .third14 {
+  grid-row: span 3;
+}
+.fourteen .fifth14 {
+  grid-row: span 2;
+  grid-column: span 2;
+}
+.fourteen .eight14 {
+  grid-row: span 3;
+}
+.fourteen .ten14 {
+  grid-column: span 2;
+  grid-row: span 3;
 }
 .fifteen .first15,
 .second15,
